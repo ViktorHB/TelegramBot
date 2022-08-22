@@ -1,0 +1,23 @@
+﻿<Window x:Class="SquaredCircle_bot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="SquaredCircle" Height="114.062" Width="235.938">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button
+            Command="{Binding QuitMouseDownCommand}"
+            Content="QUIT"
+            Margin="5"/>
+        <Button 
+            Command="{Binding ClearMouseDownCommand}"
+            Grid.Column="1" 
+            Content="CLEAR" 
+            Margin="5"/>
+    </Grid>
+</Window>
